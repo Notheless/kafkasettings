@@ -7,6 +7,13 @@ spec:
   template:
     spec:
       containers:
+        resources:
+          limits:
+            cpu: "4"
+            memory: "2Gi"
+          requests:
+            cpu: "2"
+            memory: "1Gi"
       - name: broker
         env:
         - name: JMX_PORT
