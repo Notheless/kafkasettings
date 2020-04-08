@@ -7,6 +7,10 @@ spec:
   template:
     spec:
       containers:
+      - name: broker
+        env:
+        - name: JMX_PORT
+          value: ""
         resources:
           limits:
             cpu: "4"
@@ -14,7 +18,3 @@ spec:
           requests:
             cpu: "2"
             memory: "1Gi"
-      - name: broker
-        env:
-        - name: JMX_PORT
-          value: ""
