@@ -11,10 +11,3 @@ spec:
         env:
         - name: JMX_PORT
           value: ""
-        resources:
-          limits:
-            cpu: "4"
-            memory: "2Gi"
-          requests:
-            cpu: "2"
-            memory: "1Gi"
